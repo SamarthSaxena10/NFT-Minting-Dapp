@@ -1,12 +1,12 @@
 import axios from "axios";
 import dotenv from "dotenv";
 
-// dotenv.config(); // Load environment variables from .env file
+dotenv.config(); // Load environment variables from .env file
 
-// const pinataApiKey = process.env.PINATA_API_KEY;
-// const pinataApiSecret = process.env.PINATA_API_SECRET;
+const pinataApiKey = process.env.PINATA_API_KEY;
+const pinataApiSecret = process.env.PINATA_API_SECRET;
 
-// const pinataApiUrl = "https://api.pinata.cloud/pinning/pinFileToIPFS";
+const pinataApiUrl = "https://api.pinata.cloud/pinning/pinFileToIPFS";
 
 const pinataHeaders = {
   headers: {
