@@ -1,7 +1,7 @@
 import axios from "axios";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 
-dotenv.config(); // Load environment variables from .env file
+// dotenv.config(); // Load environment variables from .env file
 
 const pinataApiKey = process.env.PINATA_API_KEY;
 const pinataApiSecret = process.env.PINATA_API_SECRET;
