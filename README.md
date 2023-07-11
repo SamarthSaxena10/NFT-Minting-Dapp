@@ -33,7 +33,7 @@ git clone https://github.com/skundu42/nft-minter-dapp.git
 npm install
 ```
 
-3. Rename .env.example file to .env and add the values
+3. In .env and add the values
 
 ```
 YOUR_PINATA_API_KEY= ""
