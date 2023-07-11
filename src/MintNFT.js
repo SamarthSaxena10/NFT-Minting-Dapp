@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { connectWallet, connectMetaMask } from "./connectWallet";
 import { uploadToIPFS } from "./ipfsUploader";
@@ -29,7 +27,6 @@ function MintNFT() {
   const [walletBalance, setWalletBalance] = useState("");
   const [imagePreviewUrl, setImagePreviewUrl] = useState(null);
   const [transactionHistory, setTransactionHistory] = useState([]);
-
 
   const handleConnectMetaMask = async () => {
     const { address, formattedBalance } = await connectMetaMask();
@@ -62,10 +59,7 @@ function MintNFT() {
     const transaction = await contract.mintNFT(signer.getAddress(), tokenURI);
     await transaction.wait();
 
-    setTransactionHistory((prevHistory) => [
-      ...prevHistory,
-      transaction.hash,
-    ]);
+    setTransactionHistory((prevHistory) => [...prevHistory, transaction.hash]);
 
     setStatus("NFT minted!");
     setAlertOpen(true);
@@ -73,7 +67,6 @@ function MintNFT() {
   };
 
   return (
-    
     <Container maxWidth="lg">
       <Box sx={{ mt: 4, mb: 2 }}>
         <Typography variant="h4" align="center" gutterBottom>
@@ -82,18 +75,20 @@ function MintNFT() {
       </Box>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
-        <Box mt={2}>
-              <Button
-                fullWidth
-                variant="contained"
-                color="primary"
-                onClick={handleConnectMetaMask}
-                size="small"
-                disabled={walletAddress} 
-              >
-                {walletAddress ? "Wallet Connected" : "Connect Wallet to Shardeum Liberty 2.X"}
-              </Button>
-            </Box>
+          <Box mt={2}>
+            <Button
+              fullWidth
+              variant="contained"
+              color="primary"
+              onClick={handleConnectMetaMask}
+              size="small"
+              disabled={walletAddress}
+            >
+              {walletAddress
+                ? "Wallet Connected"
+                : "Connect Wallet to Shardeum Sphinx Dapp"}
+            </Button>
+          </Box>
           {walletAddress && (
             <Box mt={2}>
               <Typography align="center">
@@ -125,93 +120,93 @@ function MintNFT() {
             onChange={handleImageChange}
           />
           <p></p>
-          <label      htmlFor="image-upload">
-        <Button variant="contained" color="primary" component="span">
-          Upload Image
-        </Button>
-      </label>
-      {imageStatus && (
-        <Typography variant="caption" display="block" gutterBottom>
-          {imageStatus}
-        </Typography>
-      )}
-      <Box mt={2}>
-        <Button
-          fullWidth
-          variant="contained"
-          color="secondary"
-          onClick={mint}
-        >
-          Mint NFT
-        </Button>
-      </Box>
-      {loading && <LinearProgress />}
-      
-      <Snackbar
-        open={alertOpen}
-        autoHideDuration={6000}
-        onClose={() => setAlertOpen(false)}
-        anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      >
-        <Alert
-          onClose={() => setAlertOpen(false)}
-          severity="success"
-          variant="filled"
-          sx={{ width: "100%" }}
-        >
-          NFT minted successfully!
-        </Alert>
-      </Snackbar>
-    </Grid>
-    <Grid item xs={12} md={6}>
-  <Box
-    mt={2}
-    sx={{
-      border: "1px dashed #999",
-      borderRadius: "12px",
-      padding: "16px",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      minHeight: "300px",
-      background: imagePreviewUrl
-        ? "none"
-        : "linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)",
-    }}
-  >
-    {imagePreviewUrl ? (
-      <img
-        src={imagePreviewUrl}
-        alt="Uploaded preview"
-        style={{
-          width: "100%",
-          maxHeight: "300px",
-          objectFit: "contain",
-          borderRadius: "12px",
-        }}
-      />
-    ) : (
-      <Typography variant="caption" color="text.secondary">
-        Preview image will be displayed here
-      </Typography>
-    )}
-  </Box>
-</Grid>
-    <Box mt={2}>
-        <Typography align="center" color="textSecondary">
-          {status}
-        </Typography>
-        {ipfsLink && (
-      <Typography align="left">
-    IPFS Link:{" "}
-    <Link href={ipfsLink} target="_blank" rel="noopener noreferrer">
-      {ipfsLink}
-    </Link>
-      </Typography>
-)}
-      </Box>
-  </Grid>
-  <Box mt={4}>
+          <label htmlFor="image-upload">
+            <Button variant="contained" color="primary" component="span">
+              Upload Image
+            </Button>
+          </label>
+          {imageStatus && (
+            <Typography variant="caption" display="block" gutterBottom>
+              {imageStatus}
+            </Typography>
+          )}
+          <Box mt={2}>
+            <Button
+              fullWidth
+              variant="contained"
+              color="secondary"
+              onClick={mint}
+            >
+              Mint NFT
+            </Button>
+          </Box>
+          {loading && <LinearProgress />}
+
+          <Snackbar
+            open={alertOpen}
+            autoHideDuration={6000}
+            onClose={() => setAlertOpen(false)}
+            anchorOrigin={{ vertical: "top", horizontal: "right" }}
+          >
+            <Alert
+              onClose={() => setAlertOpen(false)}
+              severity="success"
+              variant="filled"
+              sx={{ width: "100%" }}
+            >
+              NFT minted successfully!
+            </Alert>
+          </Snackbar>
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <Box
+            mt={2}
+            sx={{
+              border: "1px dashed #999",
+              borderRadius: "12px",
+              padding: "16px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              minHeight: "300px",
+              background: imagePreviewUrl
+                ? "none"
+                : "linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)",
+            }}
+          >
+            {imagePreviewUrl ? (
+              <img
+                src={imagePreviewUrl}
+                alt="Uploaded preview"
+                style={{
+                  width: "100%",
+                  maxHeight: "300px",
+                  objectFit: "contain",
+                  borderRadius: "12px",
+                }}
+              />
+            ) : (
+              <Typography variant="caption" color="text.secondary">
+                Preview image will be displayed here
+              </Typography>
+            )}
+          </Box>
+        </Grid>
+        <Box mt={2}>
+          <Typography align="center" color="textSecondary">
+            {status}
+          </Typography>
+          {ipfsLink && (
+            <Typography align="left">
+              IPFS Link:{" "}
+              <Link href={ipfsLink} target="_blank" rel="noopener noreferrer">
+                {ipfsLink}
+              </Link>
+            </Typography>
+          )}
+        </Box>
+      </Grid>
+      <Box mt={4}>
         <Typography variant="h7" align="center">
           Transaction History:
         </Typography>
@@ -233,8 +228,8 @@ function MintNFT() {
           </Typography>
         )}
       </Box>
-</Container>
-);
+    </Container>
+  );
 }
 
 export default MintNFT;
