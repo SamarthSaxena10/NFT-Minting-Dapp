@@ -24,25 +24,29 @@ This is an example of a NFT minter dapp on Shardeum.
 1. Clone the repo
 
 ```
-git clone https://github.com/skundu42/nft-minter-dapp.git
+git clone https://github.com/SamarthSaxena10/NFT-Minting-Dapp
+
 ```
 
 2. Install dependencies
 
 ```
 npm install
+
 ```
 
 3. In .env and add the values
 
 ```
 PRIVATE_KEY= ""
+
 ```
 
 4. Compile and Deploy the Contract
 
 ```
 npx hardhat compile
+
 npx hardhat run scripts/deploy.js --network sphinx
 
 ```
@@ -51,12 +55,12 @@ npx hardhat run scripts/deploy.js --network sphinx
 
 ```
 const contractAddress = "";
-```
-
-. Run the app
 
 ```
 
+6. Run the app
+
+```
 npm start
 
 ```
