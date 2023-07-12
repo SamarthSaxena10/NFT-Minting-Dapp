@@ -11,6 +11,7 @@ This is an example of a NFT minter dapp on Shardeum.
 - Hardhat
 - Pinata
 - Material UI
+- Webpack
 
 ## Features
 
