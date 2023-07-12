@@ -54,7 +54,7 @@ npx hardhat run scripts/deploy.js --network sphinx
 const contractAddress = "";
 ```
 
-6. Generate API keys from ![Pinata](https://pinata.cloud/) and add them in ipfsUploader.js
+6. Generate API keys from [Pinata](https://pinata.cloud/) and add them in ipfsUploader.js
 
 ```
 const pinataApiKey = "";
