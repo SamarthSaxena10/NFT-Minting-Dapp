@@ -5,9 +5,9 @@ export async function connectWallet() {
   await window.ethereum.request({ method: "eth_requestAccounts" });
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
-  // Insert deployed contract link here
+
   const contract = new ethers.Contract(
-    `0x6fE1Eb4f8536F1988EA7fa4a02a1ad6c67f10948`,
+    "", // Paste your Deployed NFT contract address
     NFTMinter.abi,
     signer
   );
