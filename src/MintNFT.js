@@ -82,7 +82,7 @@ function MintNFT() {
               color="primary"
               onClick={handleConnectMetaMask}
               size="small"
-              disabled={walletAddress}
+              disabled={Boolean(walletAddress)}
             >
               {walletAddress
                 ? "Wallet Connected"
