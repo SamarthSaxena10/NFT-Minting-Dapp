@@ -36,8 +36,6 @@ npm install
 3. In .env and add the values
 
 ```
-YOUR_PINATA_API_KEY= ""
-YOUR_PINATA_API_SECRET= ""
 PRIVATE_KEY= ""
 ```
 
