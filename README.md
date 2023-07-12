@@ -47,6 +47,12 @@ npx hardhat run scripts/deploy.js --network sphinx
 
 ```
 
+5. Add the contract address in connectWallet.js
+
+```
+const contractAddress = "";
+```
+
 . Run the app
 
 ```
