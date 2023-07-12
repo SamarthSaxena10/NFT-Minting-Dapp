@@ -39,10 +39,24 @@ npm install
 PRIVATE_KEY= ""
 ```
 
-4. Run the app
+4. Compile and Deploy the Contract
 
 ```
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network sphinx
+
+```
+
+. Run the app
+
+```
+
 npm start
+
 ```
 
 Feel free to clone and modify the code as you wish. If you wish to contribute, please open a PR.
+
+```
+
+```
