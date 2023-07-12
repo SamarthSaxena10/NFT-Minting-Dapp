@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const pinataApiKey = process.env.PINATA_API_KEY;
-const pinataApiSecret = process.env.PINATA_API_SECRET;
+//Paste Your API's Key and Secret here
+const pinataApiKey = "";
+const pinataApiSecret = "";
 
 const pinataApiUrl = "https://api.pinata.cloud/pinning/pinFileToIPFS";
 
