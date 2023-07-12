@@ -66,7 +66,3 @@ const pinataSecretApiKey = "";
 ```
 npm start
 ```
-
-```
-Feel free to clone and modify the code as you wish. If you wish to contribute, please open a PR.
-```
