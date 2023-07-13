@@ -4,7 +4,7 @@ This is an example of a NFT minter dapp on Shardeum.
 
 ## Tech Stack Used
 
-- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+- ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 - ![Ethers](https://img.shields.io/badge/-Ethers-000000?style=flat&logo=ethers)
 - ![Hardhat](https://img.shields.io/badge/-Hardhat-000000?style=flat&logo=hardhat)
 - ![Solidity](https://img.shields.io/badge/-Solidity-000000?style=flat&logo=solidity)
