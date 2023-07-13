@@ -2,6 +2,8 @@
 
 This is an example of a NFT minter dapp on Shardeum.
 
+![result](https://iili.io/HsyW8fS.png)
+
 ## Tech Stack Used
 
 - React
