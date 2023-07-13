@@ -10,7 +10,6 @@ This is an overview of a NFT minting dapp on Shardeum.
 - Ethers
 - Hardhat
 - Solidity
-- Hardhat
 - Pinata
 - Material UI
 - Webpack
