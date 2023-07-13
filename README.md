@@ -4,14 +4,13 @@ This is an example of a NFT minter dapp on Shardeum.
 
 ## Tech Stack Used
 
-- React
-- Ethers
-- Hardhat
-- Solidity
-- Hardhat
-- Pinata
-- Material UI
-- Webpack
+- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+- ![Ethers](https://img.shields.io/badge/-Ethers-000000?style=flat&logo=ethers)
+- ![Hardhat](https://img.shields.io/badge/-Hardhat-000000?style=flat&logo=hardhat)
+- ![Solidity](https://img.shields.io/badge/-Solidity-000000?style=flat&logo=solidity)
+- ![Pinata](https://img.shields.io/badge/-Pinata-000000?style=flat&logo=pinata)
+- ![Material UI](https://img.shields.io/badge/-MaterialUI-000000?style=flat&logo=MUI)
+- ![Webpack](https://img.shields.io/badge/-Webpack-000000?style=flat&logo=webpack)
 
 ## Features
 
