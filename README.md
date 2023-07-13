@@ -1,6 +1,6 @@
-# Shardeum NFT Minter Dapp Example
+# Shardeum NFT Minter Dapp
 
-This is an example of a NFT minter dapp on Shardeum.
+This is an overview of a NFT minting dapp on Shardeum.
 
 ![result](https://iili.io/HsyW8fS.png)
 
