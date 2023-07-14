@@ -4,7 +4,7 @@ This is an overview of a NFT minting dapp on Shardeum.
 
 ![result](https://iili.io/HsyW8fS.png)
 
-Here's the Tutorial Video --> [https://youtu.be/NTwpC_HVLP8](https://youtu.be/NTwpC_HVLP8){:target="\_blank"}
+Here's the Tutorial Video --> [Video Link](https://youtu.be/NTwpC_HVLP8)
 
 ## Tech Stack Used
 
