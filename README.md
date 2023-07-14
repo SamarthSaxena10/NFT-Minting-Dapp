@@ -4,6 +4,8 @@ This is an overview of a NFT minting dapp on Shardeum.
 
 ![result](https://iili.io/HsyW8fS.png)
 
+[Video Link](https://youtu.be/NTwpC_HVLP8)
+
 ## Tech Stack Used
 
 - React
