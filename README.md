@@ -27,25 +27,25 @@ Here's the Tutorial Video --> [Video Link](https://youtu.be/NTwpC_HVLP8)
 
 1. Clone the repo
 
-```
+```shell
 git clone https://github.com/SamarthSaxena10/NFT-Minting-Dapp
 ```
 
 2. Install dependencies
 
-```
+```shell
 npm install
 ```
 
 3. In .env and add the values
 
-```
+```shell
 PRIVATE_KEY= ""
 ```
 
 4. Compile and Deploy the Contract
 
-```
+```shell
 npx hardhat compile
 
 npx hardhat run scripts/deploy.js --network sphinx
@@ -53,19 +53,19 @@ npx hardhat run scripts/deploy.js --network sphinx
 
 5. Add the contract address in connectWallet.js
 
-```
+```shell
 const contractAddress = "";
 ```
 
 6. Generate API keys from [Pinata](https://pinata.cloud/) and add them in ipfsUploader.js
 
-```
+```shell
 const pinataApiKey = "";
 const pinataSecretApiKey = "";
 ```
 
 7. Run the app
 
-```
+```shell
 npm start
 ```
