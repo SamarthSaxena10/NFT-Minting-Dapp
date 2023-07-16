@@ -28,7 +28,7 @@ Here's the Tutorial Video --> [Video Link](https://youtu.be/NTwpC_HVLP8)
 1. Clone the repo
 
 ```shell
-git clone https://github.com/SamarthSaxena10/NFT-Minting-Dapp
+git clone https://github.com/SamarthSaxena10/NFT-Minting-Dapp.git
 ```
 
 2. Install dependencies
