@@ -40,7 +40,7 @@ npm install
 3. In .env and add the values
 
 ```shell
-PRIVATE_KEY= ""
+PRIVATE_KEY=
 ```
 
 4. Compile and Deploy the Contract
