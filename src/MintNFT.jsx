@@ -69,9 +69,33 @@ function MintNFT() {
   return (
     <Container maxWidth="lg">
       <Box sx={{ mt: 4, mb: 2 }}>
-        <Typography variant="h4" align="center" gutterBottom>
+        <Typography
+          variant="h4"
+          align="center"
+          gutterBottom
+          style={{ color: "white" }}
+        >
           Shardeum NFT Minter
         </Typography>
+      </Box>
+      <img src="images/bg-top.svg" alt="" className="bg-top" />
+
+      <Box className="main">
+        <Box className="left">
+          <h1>
+            <span className="purple">Decentralization for everyone</span>{" "}
+          </h1>
+          <p>
+            Shardeum is an EVM-based L1 that uses dynamic state sharding to
+            achieve linear scalability while retaining atomic composability
+            across shards. Shardeum can increase its TPS capacity with each
+            validator added to the network to retain low fees forever.
+          </p>
+        </Box>
+
+        <Box className="right">
+          <img src="/images/bitcoin-logo.svg" alt="" className="btc-img" />
+        </Box>
       </Box>
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
@@ -91,10 +115,19 @@ function MintNFT() {
           </Box>
           {walletAddress && (
             <Box mt={2}>
-              <Typography align="center">
+              <Typography
+                align="center"
+                style={{ color: "white", fontFamily: "Arial" }}
+              >
                 Wallet Address: {walletAddress}
               </Typography>
-              <Typography align="center">
+              <Typography
+                align="center"
+                style={{
+                  color: "white",
+                  fontFamily: "Arial",
+                }}
+              >
                 Wallet Balance: {walletBalance} SHM
               </Typography>
             </Box>
@@ -102,14 +135,14 @@ function MintNFT() {
           <TextField
             fullWidth
             label="NFT Name"
-            variant="outlined"
+            variant="filled"
             margin="normal"
             onChange={(e) => setName(e.target.value)}
           />
           <TextField
             fullWidth
             label="NFT Description"
-            variant="outlined"
+            variant="filled"
             margin="normal"
             onChange={(e) => setDescription(e.target.value)}
           />
