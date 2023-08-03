@@ -232,7 +232,12 @@ function MintNFT() {
           {ipfsLink && (
             <Typography align="left">
               IPFS Link:{" "}
-              <Link href={ipfsLink} target="_blank" rel="noopener noreferrer">
+              <Link
+                href={ipfsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#ee2e31" }}
+              >
                 {ipfsLink}
               </Link>
             </Typography>
@@ -250,6 +255,7 @@ function MintNFT() {
                 href={`https://explorer-dapps.shardeum.org/transaction/${hash}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ color: "#ee2e31" }}
               >
                 {`Transaction ${index + 1}: ${hash}`}
               </Link>
