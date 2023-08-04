@@ -8,9 +8,21 @@
 }
 
 body {
-  background: #000046;
-  background: -webkit-linear-gradient(to bottom, #000046, #50d7fc);
-  background: linear-gradient(to bottom, #000046, #3fd5ff);
+  background: #c6ffdd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+
+    #c6ffdd,
+    #fcfcfc,
+    #f4af4f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+
+    #c6ffdd,
+    #f2f1ef,
+    #f4af4f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   overflow-x: hidden;
 }
@@ -27,25 +39,23 @@ body {
 .left h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 6070;
-  color: #f5f5f5;
 }
 
 .left .purple {
   font-family: "Signika", sans-serif;
   font-weight: 700;
   font-size: 50px;
-  background: #7474bf; /* fallback for old browsers */
+  background: #141e30; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to bottom,
-    #348ac7,
-    #7474bf
+    to top,
+    #243b55,
+    #141e30
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to bottom,
-    #348ac7,
-    #7474bf
+    to top,
+    #243b55,
+    #141e30
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -55,5 +65,5 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  color: #dfdfdf;
+  color: #000000;
 }

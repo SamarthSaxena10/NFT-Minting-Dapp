@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { connectWallet, connectMetaMask } from "./connectWallet";
 import { uploadToIPFS } from "./ipfsUploader";
+
+import NFTImage from "./images/tour.png";
+
 import {
   TextField,
   Button,
@@ -77,6 +80,15 @@ function MintNFT() {
         >
           Shardeum NFT Minter
         </Typography>
+        <img
+          src={NFTImage}
+          alt="NFT Minter"
+          style={{
+            display: "block",
+            margin: "80px auto 0px auto",
+            maxWidth: "80%",
+          }}
+        />
       </Box>
       <img src="images/bg-top.svg" alt="" className="bg-top" />
 
@@ -117,14 +129,14 @@ function MintNFT() {
             <Box mt={2}>
               <Typography
                 align="center"
-                style={{ color: "white", fontFamily: "Arial" }}
+                style={{ color: "#941b0c", fontFamily: "Arial" }}
               >
                 Wallet Address: {walletAddress}
               </Typography>
               <Typography
                 align="center"
                 style={{
-                  color: "white",
+                  color: "#941b0c",
                   fontFamily: "Arial",
                 }}
               >
